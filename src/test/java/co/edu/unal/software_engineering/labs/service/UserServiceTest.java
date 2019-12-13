@@ -101,14 +101,14 @@ public class UserServiceTest{
         assertFalse( userService.isRightUser( user ) );
 
         user.setPassword( "   " );
-        user.setUsername( "Test" );
-        assertFalse( userService.isRightUser( user ) );
+        user.setUsername( "Test" )
+
 
         user.setNames( "Test" );
-        user.setSurnames( "Test" );
+        user.setSurnames( "Esto no es un usuario" );
         user.setPassword( "Test" );
         user.setUsername( "Test" );
-        assertTrue( userService.isRightUser( user ) );
+        assertFalse( userService.isRightUser( user ) );
     }
 
 }
