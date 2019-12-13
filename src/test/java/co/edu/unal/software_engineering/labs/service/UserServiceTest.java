@@ -101,8 +101,8 @@ public class UserServiceTest{
         assertFalse( userService.isRightUser( user ) );
 
         user.setPassword( "   " );
-        user.setUsername( "Test" );
-        
+        user.setUsername( "Test" )
+
 
         user.setNames( "Test" );
         user.setSurnames( "Esto no es un usuario" );
